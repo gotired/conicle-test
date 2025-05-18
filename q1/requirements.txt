@@ -1,0 +1,9 @@
+pandas==2.2.3
+openpyxl==3.1.5
+streamlit==1.45.1
+langchain==0.3.25
+langchain_ollama==0.3.3
+langchain-postgres==0.0.14
+psycopg-binary==3.2.9
+langgraph==0.4.5
+tabulate==0.9.0
