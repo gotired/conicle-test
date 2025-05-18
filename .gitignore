@@ -1,0 +1,5 @@
+.venv/
+ollama/
+__pycache__/
+.ruff_cache/
+.env
