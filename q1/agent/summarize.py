@@ -33,6 +33,8 @@ Relevant Competencies:
 Relevant Roles:
 - [Role 1]: [Role 1 Description]
 - [Role 2]: [Role 2 Description]
+
+User Input: [user input]
 ```
 
 # Output Format
@@ -57,6 +59,8 @@ Relevant Competencies:
 Relevant Roles:
 - Blockchain Developer: Develops applications using blockchain technology to ensure secure transactions.
 - Software Engineer: Designs, develops, and maintains software applications.
+
+User Input: Blockchain and Software development skills
 ```
 
 ### Output
@@ -98,7 +102,8 @@ Course Suggestions:
         )
         user_format_prompt = f"""
         Relevant Competencies:\n {format_competencies}\n\n
-        Relevant Roles: {format_roles}\n\n
+        Relevant Roles:\n {format_roles}\n\n
+        User Input: {user_input}\n\n
         """
         response = self.chain.invoke(
             {"system": self.BasePrompt, "history": [], "user": user_format_prompt}
