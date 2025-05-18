@@ -1,0 +1,39 @@
+services:
+  chatbot:
+    build: .
+    hostname: chatbot
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    ports:
+      - "8501:8501"
+    restart: always
+    networks:
+      - chatbot-network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - db
+
+  db:
+    image: pgvector/pgvector:pg17
+    container_name: db
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER} 
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD} 
+      POSTGRES_DB: ${POSTGRES_DB} 
+    ports:
+      - "8502:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - chatbot-network
+
+volumes:
+  pgdata:
+
+
+networks:
+  chatbot-network:
+    external: true
