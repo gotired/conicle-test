@@ -28,8 +28,7 @@ flowchart TD
 1. clone the repository and access to folder
 
    ```bash
-   git clone
-   cd q1/
+   git clone https://github.com/gotired/conicle-test.git && cd conicle-test/q1/
    ```
 
 2. define `.env` **example:** [`.env.example`](.env.example)
