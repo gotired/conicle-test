@@ -13,7 +13,7 @@ The chatbot must include a user interface (e.g., via Streamlit or Gradio) that d
 smooth conversation flow. The end goal is to simulate how a learning assistant could help users
 discover relevant competencies and learning paths.
 
-## [Question 2](q2/README.MD)
+## [Question 2](q2/README.md)
 
 **Design a Recommendation System and Address the Cold-Start Problem**
 
@@ -29,7 +29,7 @@ In addition, provide a brief overview or example of how you would build and serv
 a real-world setting (e.g., through an API or integration with a learning platform). You may
 include diagrams or code snippets if necessary to clarify your approach.
 
-## [Question 3](q3/README.MD)
+## [Question 3](q3/README.md)
 
 **System Design: Course Transcription & Chatbot Assistant Integration**
 
