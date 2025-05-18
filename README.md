@@ -1,6 +1,6 @@
 # Conicle Test
 
-## [Question 1](q1/README.MD)
+## [Question 1](q1/README.md)
 
 ### Task:
 
